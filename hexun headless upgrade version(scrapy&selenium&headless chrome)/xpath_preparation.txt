@@ -1,0 +1,77 @@
+-------------------------------------------------------------------------------------
+#article title #
+$x("//span[@class='ArticleTitleText']/a/text()")
+(10) [text, text, text, text, text, text, text, text, text, text]
+$x("//span[@class='ArticleTitleText']/a/text()")[0]
+"周蓬安：这智商！粮食日绝食害己、水日断水害人"
+
+--------------------------------------------------------------------------------------
+#article link #
+$x("//span[@class='ArticleTitleText']/a/@href")
+(10) [href, href, href, href, href, href, href, href, href, href]
+$x("//span[@class='ArticleTitleText']/a/@href")[0]
+href=​"http:​/​/​19940007.blog.hexun.com/​114840448_d.html"
+$x("//span[@class='ArticleTitleText']/a/@href")
+(10) [href, href, href, href, href, href, href, href, href, href]
+
+---------------------------------------------------------------------------------------
+$x('//div[@class="ArticleInfo"]')
+(10) [div.ArticleInfo, div.ArticleInfo, div.ArticleInfo, div.ArticleInfo, div.ArticleInfo, div.ArticleInfo, div.ArticleInfo, div.ArticleInfo, div.ArticleInfo, div.ArticleInfo]
+$x('//div[@class="ArticleInfo"]/span/@id')
+(10) [id, id, id, id, id, id, id, id, id, id]
+$x('//div[@class="ArticleInfo"]/span/@id')[0]
+id=​"click114840448"
+$x('//div[@class="ArticleInfo"]/span/@id')[1]
+id=​"click114827336"
+$x('//*[@id="click114736667"]/text()')[0]
+"903"
+$x('//div[@class="ArticleInfo"]/span')
+(10) [span#click114840448, span#click114827336, span#click114810668, span#click114807276, span#click114790904, span#click114772422, span#click114761515, span#click114756305, span#click114748655, span#click114736667]
+
+---------------------------------------------------------------------------------
+#click count#
+
+$x('//div[@class="ArticleInfo"]/span/text()')
+(10) [text, text, text, text, text, text, text, text, text, text]
+$x('//div[@class="ArticleInfo"]/span/text()')[0]
+"1350"
+$x('//div[@class="ArticleInfo"]/span/text()')[1]
+"57"
+$x('//div[@class="ArticleInfo"]/span/text()')[2]
+"1338"
+
+---------------------------------------------------------------------------------------
+# comments count#
+$x('//div[@class="ArticleInfo"]/a/span/text()')[2]
+"0"
+$x('//div[@class="ArticleInfo"]/a/span/text()')
+(10) [text, text, text, text, text, text, text, text, text, text]
+$x('//div[@class="ArticleInfo"]/a/span/text()')[0]
+"1"
+$x('//div[@class="ArticleInfo"]/a/span/text()')[1]
+"0"
+$x('//div[@class="ArticleInfo"]/a/span/text()')[2]
+"0"
+$x('//div[@class="ArticleInfo"]/a/span/text()')[3]
+"0"
+$x('//div[@class="ArticleInfo"]/a/span/text()')[4]
+"0"
+$x('//div[@class="ArticleInfo"]/a/span/text()')[5]
+"0"
+$x('//div[@class="ArticleInfo"]/a/span/text()')[6]
+"0"
+-------------------------------------------------------------------------------------------
+#article bytes #
+$x('//span[@class="ArticleWordCount"]/text()')
+(10) [text, text, text, text, text, text, text, text, text, text]
+$x('//span[@class="ArticleWordCount"]/text()')[0]
+"(字节数: 12079)"
+
+----------------------------------------------------------------------------------------------
+
+# the page number of blog #
+$x('//div[@class="PageSkip_1"]/a')
+(7) [a, a, a, a, a, a, a]
+$x('//div[@class="PageSkip_1"]/a/text()')[5]
+"444"                #倒数第二个是页码长度
+
